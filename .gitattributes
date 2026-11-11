@@ -1,0 +1,12 @@
+# NetSwitch.ps1 必须保留 UTF-8 BOM：PowerShell 5.1 按 ANSI 读取无 BOM 文件会中文乱码。
+# -text 禁止 Git 做任何 EOL / 编码转换，BOM 原样入库。
+*.ps1 -text
+
+# Windows 批处理用 CRLF 最稳
+*.bat text eol=crlf
+
+# 文本源码统一以 LF 入库
+*.py text eol=lf
+*.md text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf

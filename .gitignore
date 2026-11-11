@@ -1,0 +1,21 @@
+# Python 编译产物 / 旧机器残留
+__pycache__/
+*.py[cod]
+
+# PyInstaller 打包产物（exe 走 GitHub Release，不进仓库）
+build/
+dist/
+*.spec
+
+# 桌面快捷方式：内含本机绝对路径与用户名，必须每台机器本地生成
+*.lnk
+
+# 快捷方式生成器的自检临时文件
+_lnk_probe.*
+
+# 系统 / 编辑器 / 工作区数据
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/
+.workbuddy/
